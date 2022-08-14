@@ -63,8 +63,3 @@ async fn main() {
     }
 }
 
-// #[command]
-// async fn stop(ctx: &Context, msg: &Message) -> CommandResult {
-//     msg.reply(ctx, "Stopping server").await?;
-//     Ok(())
-// }
