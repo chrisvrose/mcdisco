@@ -4,8 +4,10 @@ A smol discord bot to help start a server, without needing to ssh in.
 
 ## Commands
 
-1. `start` - Start the server
-2. `status` - Get the server status
+- [X] `start` - Start the server
+- [X] `status` - Get the server status
+- [ ] `help` - Get commands
+- [ ] `stop` - Stop the server
 
 ## Env vars
 
