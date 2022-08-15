@@ -119,7 +119,9 @@ pub async fn stop(ctx: &Context, msg: &Message) -> CommandResult {
                 stdin.write_all(b"stop\n").unwrap();
                 // drop(stdin);
             }
-            None => {}
+            None => {
+                warn!("Server has closed since poll - exit now");
+            }
         }
         msg.reply(ctx, "Stopping the server").await?;
     } else {
